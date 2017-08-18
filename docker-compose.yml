@@ -1,0 +1,11 @@
+version: '2'
+services:
+  app:
+    build: .
+    container_name: study-go-for-everyone
+    restart: always
+    stdin_open: true
+    volumes:
+      - .:/root/study-go-for-everyone
+    ports:
+      - 3000
